@@ -252,6 +252,7 @@
 				ORGANIZATIONNAME = AppUnite;
 				TargetAttributes = {
 					AE71145A1880148B008B2FB4 = {
+						DevelopmentTeam = 2A2KFV63E5;
 						SystemCapabilities = {
 							com.apple.iOS = {
 								enabled = 1;
@@ -437,6 +438,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFF/FFF-Prefix.pch";
 				INFOPLIST_FILE = "FFF/FFF-Info.plist";
@@ -445,6 +448,7 @@
 					/Users/piotr/Downloads/fff/FFF/Frameworks/EstimoteSDK/EstimoteSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -454,6 +458,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FFF/FFF-Prefix.pch";
 				INFOPLIST_FILE = "FFF/FFF-Info.plist";
@@ -462,6 +468,7 @@
 					/Users/piotr/Downloads/fff/FFF/Frameworks/EstimoteSDK/EstimoteSDK,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

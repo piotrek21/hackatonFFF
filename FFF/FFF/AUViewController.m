@@ -8,7 +8,6 @@
 
 #import "AUViewController.h"
 
-#import "ESTBeaconManager.h"
 
 @interface AUViewController () {
     ESTBeaconManager * _beaconManager;
@@ -26,17 +25,11 @@
     _beaconManager.delegate = self;
     _beaconManager.avoidUnknownStateBeacons = YES;
     
-    // create sample region with major value defined
-    ESTBeaconRegion* region = [[ESTBeaconRegion alloc] initRegionWithMajor:1 minor:1 identifier: @"EstimoteSampleRegion"];
+    ESTBeaconRegion* region = [[ESTBeaconRegion alloc] initRegionWithIdentifier:@"EstimoteSampleRegion"];
     
-    // start looking for estimote beacons in region
-    // when beacon ranged beaconManager:didEnterRegion:
-    // and beaconManager:didExitRegion: invoked
     [_beaconManager startMonitoringForRegion:region];
-    
     [_beaconManager requestStateForRegion:region];
-
-	// Do any additional setup after loading the view, typically from a nib.
+    [_beaconManager startRangingBeaconsInRegion:region];
 }
 
 
@@ -46,13 +39,14 @@
     
     if([beacons count] > 0) {
         
-        NSSortDescriptor * sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"ibeacon.rssi" ascending:NO];
+        
+        NSSortDescriptor * sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"rssi" ascending:NO];
         NSArray * sortedBeacons = [beacons sortedArrayUsingDescriptors:@[sortDescriptor]];
         
         ESTBeacon * beacon = [sortedBeacons firstObject];
         
-        if (beacon.proximity == CLProximityNear || beacon.proximity == CLProximityImmediate) {
-            [self.beaconLabel setText:[NSString stringWithFormat:@"%@ %@",beacon.major, beacon.minor]];
+        if (beacon.proximity == CLProximityNear) {
+            [self.beaconLabel setText:[NSString stringWithFormat:@"Nearest beacon:\nMajor:%@\nMinor:%@\nDistance:%@",beacon.major, beacon.minor, beacon.distance]];
         }
     }
 }

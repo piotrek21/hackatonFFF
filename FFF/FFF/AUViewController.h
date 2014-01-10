@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AUViewController : UIViewController
+#import "ESTBeaconManager.h"
+
+@interface AUViewController : UIViewController <ESTBeaconManagerDelegate>
 
 @property IBOutlet UILabel * beaconLabel;
 
