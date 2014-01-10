@@ -21,8 +21,12 @@
 		AE7114801880148B008B2FB4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7114621880148B008B2FB4 /* UIKit.framework */; };
 		AE7114881880148B008B2FB4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AE7114861880148B008B2FB4 /* InfoPlist.strings */; };
 		AE71148A1880148B008B2FB4 /* FFFTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7114891880148B008B2FB4 /* FFFTests.m */; };
-		AE71149A18801534008B2FB4 /* libEstimoteSDK7.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71149918801534008B2FB4 /* libEstimoteSDK7.a */; };
 		AE71149C1880153D008B2FB4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE71149B1880153D008B2FB4 /* MapKit.framework */; };
+		AE7114A51880181A008B2FB4 /* libEstimoteSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7114A41880181A008B2FB4 /* libEstimoteSDK.a */; };
+		AE7114A7188018F9008B2FB4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7114A6188018F9008B2FB4 /* CoreLocation.framework */; };
+		AE7114A91880190A008B2FB4 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7114A81880190A008B2FB4 /* Security.framework */; };
+		AE7114AB18801925008B2FB4 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7114AA18801925008B2FB4 /* CFNetwork.framework */; };
+		AE7114AD18801950008B2FB4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE7114AC18801950008B2FB4 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +59,17 @@
 		AE7114851880148B008B2FB4 /* FFFTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FFFTests-Info.plist"; sourceTree = "<group>"; };
 		AE7114871880148B008B2FB4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AE7114891880148B008B2FB4 /* FFFTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FFFTests.m; sourceTree = "<group>"; };
-		AE71149518801534008B2FB4 /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
-		AE71149618801534008B2FB4 /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
-		AE71149718801534008B2FB4 /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
-		AE71149818801534008B2FB4 /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
-		AE71149918801534008B2FB4 /* libEstimoteSDK7.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK7.a; sourceTree = "<group>"; };
 		AE71149B1880153D008B2FB4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		AE71149F1880181A008B2FB4 /* ESTBeacon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeacon.h; sourceTree = "<group>"; };
+		AE7114A01880181A008B2FB4 /* ESTBeaconDefinitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconDefinitions.h; sourceTree = "<group>"; };
+		AE7114A11880181A008B2FB4 /* ESTBeaconManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconManager.h; sourceTree = "<group>"; };
+		AE7114A21880181A008B2FB4 /* ESTBeaconRegion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconRegion.h; sourceTree = "<group>"; };
+		AE7114A31880181A008B2FB4 /* ESTBeaconUpdateInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ESTBeaconUpdateInfo.h; sourceTree = "<group>"; };
+		AE7114A41880181A008B2FB4 /* libEstimoteSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libEstimoteSDK.a; sourceTree = "<group>"; };
+		AE7114A6188018F9008B2FB4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AE7114A81880190A008B2FB4 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AE7114AA18801925008B2FB4 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AE7114AC18801950008B2FB4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,11 +77,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE7114AD18801950008B2FB4 /* SystemConfiguration.framework in Frameworks */,
+				AE7114AB18801925008B2FB4 /* CFNetwork.framework in Frameworks */,
+				AE7114A91880190A008B2FB4 /* Security.framework in Frameworks */,
+				AE7114A7188018F9008B2FB4 /* CoreLocation.framework in Frameworks */,
 				AE7114611880148B008B2FB4 /* CoreGraphics.framework in Frameworks */,
 				AE7114631880148B008B2FB4 /* UIKit.framework in Frameworks */,
 				AE71149C1880153D008B2FB4 /* MapKit.framework in Frameworks */,
-				AE71149A18801534008B2FB4 /* libEstimoteSDK7.a in Frameworks */,
 				AE71145F1880148B008B2FB4 /* Foundation.framework in Frameworks */,
+				AE7114A51880181A008B2FB4 /* libEstimoteSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +124,12 @@
 		AE71145D1880148B008B2FB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AE7114AC18801950008B2FB4 /* SystemConfiguration.framework */,
+				AE7114AA18801925008B2FB4 /* CFNetwork.framework */,
+				AE7114A81880190A008B2FB4 /* Security.framework */,
+				AE7114A6188018F9008B2FB4 /* CoreLocation.framework */,
+				AE71149D1880181A008B2FB4 /* EstimoteSDK */,
 				AE71149B1880153D008B2FB4 /* MapKit.framework */,
-				AE71149318801534008B2FB4 /* EstimoteSDK */,
 				AE71145E1880148B008B2FB4 /* Foundation.framework */,
 				AE7114601880148B008B2FB4 /* CoreGraphics.framework */,
 				AE7114621880148B008B2FB4 /* UIKit.framework */,
@@ -164,23 +181,24 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		AE71149318801534008B2FB4 /* EstimoteSDK */ = {
+		AE71149D1880181A008B2FB4 /* EstimoteSDK */ = {
 			isa = PBXGroup;
 			children = (
-				AE71149418801534008B2FB4 /* Headers */,
-				AE71149918801534008B2FB4 /* libEstimoteSDK7.a */,
+				AE71149E1880181A008B2FB4 /* Headers */,
+				AE7114A41880181A008B2FB4 /* libEstimoteSDK.a */,
 			);
 			name = EstimoteSDK;
 			path = Frameworks/EstimoteSDK/EstimoteSDK;
 			sourceTree = "<group>";
 		};
-		AE71149418801534008B2FB4 /* Headers */ = {
+		AE71149E1880181A008B2FB4 /* Headers */ = {
 			isa = PBXGroup;
 			children = (
-				AE71149518801534008B2FB4 /* ESTBeacon.h */,
-				AE71149618801534008B2FB4 /* ESTBeaconDefinitions.h */,
-				AE71149718801534008B2FB4 /* ESTBeaconManager.h */,
-				AE71149818801534008B2FB4 /* ESTBeaconRegion.h */,
+				AE71149F1880181A008B2FB4 /* ESTBeacon.h */,
+				AE7114A01880181A008B2FB4 /* ESTBeaconDefinitions.h */,
+				AE7114A11880181A008B2FB4 /* ESTBeaconManager.h */,
+				AE7114A21880181A008B2FB4 /* ESTBeaconRegion.h */,
+				AE7114A31880181A008B2FB4 /* ESTBeaconUpdateInfo.h */,
 			);
 			path = Headers;
 			sourceTree = "<group>";

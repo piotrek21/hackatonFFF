@@ -1,0 +1,3 @@
+[submodule "FFF/Frameworks/EstimoteSDK"]
+	path = FFF/Frameworks/EstimoteSDK
+	url = https://github.com/Estimote/iOS-SDK.git

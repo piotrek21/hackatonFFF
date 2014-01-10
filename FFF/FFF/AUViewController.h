@@ -10,4 +10,6 @@
 
 @interface AUViewController : UIViewController
 
+@property IBOutlet UILabel * beaconLabel;
+
 @end
